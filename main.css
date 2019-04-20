@@ -1,16 +1,27 @@
-html {
-  scroll-behavior: smooth;
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Varela+Round');
+
+@font-face {
+	font-family: "Shopping Script";
+	src: url("css/fonts/ShoppingScriptDemo.ttf");
 }
 
 body {
 	position: relative;
+	background-attachment: fixed;
+}
+
+.jumbotron-fluid{
+	display: block;
+	background-image: url("images/twobroschillinvibeCROPPED.jpg");
+	background-size: 100%;	
 }
 
 span:hover{
 	/*transform: scale(.9, .9);*/
 	opacity: .8;
 }
-
 
 footer{
 	padding: 20px;
@@ -54,7 +65,7 @@ footer{
 	/* background: rgb(200, 200, 200);
 	background: rgba(209, 209, 209, .5);
 	*/
-	background-color: white; /* OR transparent */
+	background-color: transparent; /* OR transparent */
 	width: 100%;
     text-align: center;
     float: none;
@@ -62,15 +73,33 @@ footer{
 }
 
 .nav-item{
-	font-family: Georgia, serif;
-	font-size: 20px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 30px;
+}
+
+.font_playfair{
+	font-family: 'Playfair Display';
+	font-size: 30px;
+}
+	
+.font_shopping{
+	font-family: "Shopping Script";
+	font-size: 50px;
+}
+
+/* THIS CODE BLOCK HIDES / DISPLAYS THE LOGO ON SCROLL */ 
+.navbar-brand{
+	display: none;
 }
 
 .header-custom{
 	/* background-image: url("images/CO.png"); */
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 100vh;
+	/* background-size: 100% 100%; 
+	background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("images/twobroschillinvibe.jpg");
+	*/
+	width: 100%;
+	height: auto;
 	/* background-color: white; */
 }
 
@@ -93,3 +122,16 @@ body{
 }
 */
 
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .navbar-brand{
+	display: block;
+	transition: display 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .font_playfair{
+	display: none;
+}

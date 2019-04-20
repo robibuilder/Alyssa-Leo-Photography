@@ -4,6 +4,33 @@
 
 	<title>Alyssa Leo</title>
 
+	<!-- NAV BAR -->
+	<nav class="navbar navbar-fixed-top navbar-expand-xl justify-content-center"> <!-- sticky-top -->
+		<div class="nav-item active">
+			<a class="nav-link text-dark" href="#home">Home</a>
+		</div>
+
+		<div class="nav-item">
+			<a class="nav-link text-dark" href="#photography">Photography</a>
+		</div>
+
+		<div class="nav-item">
+			<h1 class="font_playfair">Alyssa Leo<br><span2 class="font_shopping">photography</span2>	</h1>
+		</div>
+
+		<div class="navbar-brand">
+			<img href="#home" src="images/logo_label.png" alt="Alyssa Leo" height="100" width="150">
+		</div>
+
+		<div class="nav-item active">
+			<a class="nav-link text-dark" href="#videography">Videography</a>
+		</div>
+
+		<div class="nav-item active">
+			<a class="nav-link text-dark" href="info.html">About</a>
+		</div>
+	</nav>
+
 </head>
     <meta charset="utf-8">
 
@@ -23,43 +50,63 @@
 
     <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
 
+    <!-- borrowed code because my implementation was not compatible with ou create -->
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 800, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
+
+	<script type="text/javascript">
+		$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+	</script>
     
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<!-- NAV BAR -->
-	<nav class="navbar sticky-top navbar-expand-xl justify-content-center">
-		<div class="nav-item active">
-			<a class="nav-link text-dark" href="#home">Home</a>
-		</div>
+	
 
-		<div class="nav-item">
-			<a class="nav-link text-dark" href="#photography">Photography</a>
-		</div>
-
-		<div class="navbar-brand">
-			<img href="#home" src="images/logo_label.png" alt="Alyssa Leo" height="100" width="150">
-		</div>
-
-		<div class="nav-item active">
-			<a class="nav-link text-dark" href="#videography">Videography</a>
-		</div>
-
-		<div class="nav-item active">
-			<a class="nav-link text-dark" href="info.html">About</a>
-		</div>
-	</nav>
-
-<div id="home" class="jumbotron-fluid text-center header-custom" > <!-- Change from jumbotron to "containter"/"container-fluid" for correct color -->
+<div id="home" class="jumbotron-fluid text-center header-custom" style="height: 100vh;"> <!-- Change from jumbotron to "containter"/"container-fluid" for correct color -->
 	
 	<!-- Testing css fonts for the logo 
 
 		<img class="" src="images/logo_label.png" alt="logo" height="240" width="400">
 		<h1 style="font-family: sans-serif;">ALYSSA LEO</h1>
 		<h1 style="font-family: 'Cedarville Cursive', cursive;">This is the header</h1>
-
 	-->
+</div>
 
-	<p2>insert home pic</p2>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<br>
+		</div>
+	</div>
 </div>
 
 	<!-- ROW 1 -->	
@@ -68,24 +115,24 @@
 		<div class="row">
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
-					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+					<a href="images/GroupInteract.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/GroupInteract.jpg" alt="telsa">
 					</a>
 				</span>
 			</div>
 
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
-					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+					<a href="images/SmilingHeadUp.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/SmilingHeadUp.jpg" alt="1">
 					</a>
 				</span>
 			</div>
 
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
-					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+					<a href="images/puddles bucket2.jpg" data-lightbox="gallery">
+						<img class="img-grid" src="images/puddles bucket2.jpg" alt="1">
 					</a>
 				</span>
 			</div>
@@ -101,7 +148,7 @@
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
 					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+						<img class="img-grid" src="images/Tai_USE.jpg" alt="1">
 					</a>
 				</span>
 			</div>
@@ -109,7 +156,7 @@
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
 					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+						<img class="img-grid" src="images/IMG_0426.jpg" alt="1">
 					</a>
 				</span>
 			</div>
@@ -117,7 +164,7 @@
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
 					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+						<img class="img-grid" src="images/LoneCoyote.jpg" alt="1">
 					</a>
 				</span>
 			</div>
@@ -126,14 +173,13 @@
 	</div>
  
 	<!-- ROW 3 -->
-
 	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
 		<!-- **************************************************** -->
 		<div class="row">
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
 					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+						<img class="img-grid" src="images/IMG_1070-3.jpg" alt="1">
 			 		</a>
 				</span>
 			</div>
@@ -141,7 +187,7 @@
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
 					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+						<img class="img-grid" src="images/peacock.jpg" alt="1">
 					</a>
 				</span>
 			</div>
@@ -149,7 +195,119 @@
 			<div class="col-lg-4 pl-7 pr-7">
 				<span>
 					<a href="images/CO.png" data-lightbox="gallery">
-						<img class="img-grid" src="images/CO.png" alt="1">
+						<img class="img-grid" src="images/CuriousCoyotes.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 4 -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/puddles.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/albinopeacock.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/IMG_0449.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 5 -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/IMG_0473.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/LukeShadowUSE.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/pkitty.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 6 -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/Swift Fox portrait-1.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/puddles bucket1.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/puddles1.jpg" alt="1">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ROW 7 - PORTRAIT -->
+	<div id="1" class="container-fluid padding_bottom"> <!--add "-fluid" to stretch grid page width -->	
+		<!-- **************************************************** -->
+		<div class="row">
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/LukeLickUSE.jpg" alt="1">
+			 		</a>
+				</span>
+			</div>
+
+			<div class="col-lg-4 pl-7 pr-7">
+				<span>
+					<a href="images/CO.png" data-lightbox="gallery">
+						<img class="img-grid" src="images/LukePortraitUSE.jpg" alt="1">
 					</a>
 				</span>
 			</div>
@@ -224,7 +382,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
-					<span>Copyright © Ayssa Leo</span>
+					<span>Copyright © Alyssa Leo</span>
 					<span> // </span>
 					Site by <a style="color: white" href="http://jacobrobinett.com/"target="_blank">Jacob Robinett</a>
 				</div>
