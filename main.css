@@ -4,7 +4,10 @@
 
 @font-face {
 	font-family: "Shopping Script";
-	src: url("css/fonts/ShoppingScriptDemo.ttf");
+	src: url("css/fonts/ShoppingScriptDemo.ttf"),
+	url("css/fonts/shoppingscriptdemo-webfont.woff") format("woff"),	
+	url("css/fonts/ShoppingScriptDemo.otf") format("opentype"),
+	url("css/fonts/shoppingscriptdemo-webfont.svg#filename") format("svg");
 }
 
 body {
@@ -17,7 +20,7 @@ body {
 	background-image: url("images/twobroschillinvibeCROPPED.jpg");
 	background-size: 100%;	
 }
-
+	
 span:hover{
 	/*transform: scale(.9, .9);*/
 	opacity: .8;
