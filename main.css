@@ -1,9 +1,0 @@
-.fixed{
-	z-index: 500;
-	position: fixed;
-	top: 0;
-}
-
-.height_max{
-	height: 100vh;
-}
